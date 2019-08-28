@@ -1350,6 +1350,14 @@ source "drivers/input/touchscreen/focaltech_touch/Kconfig"
 
 source "drivers/input/touchscreen/nt36xxx/Kconfig"
 
+config TOUCHSCREEN_FOCAL_FT8719_E7T
+	bool "Focaltech Touchscreen"
+	depends on I2C
+	default n
+	help
+	  Say Y here if you have Focaltech touch panel.
+	  If unsure, say N.
+
 config TOUCHSCREEN_NVT_D2S
 	tristate "novatek touchscreens"
 	help
@@ -1387,6 +1395,8 @@ config TOUCHSCREEN_NVT_F7A
 
 	  To compile this driver as a module, choose M here: the
 	  module will be called nvt.
+
+source "drivers/input/touchscreen/focal_ft8719_e7t/Kconfig"
 
 source "drivers/input/touchscreen/nvt_touch_f7a/Kconfig"
 

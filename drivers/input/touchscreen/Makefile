@@ -114,6 +114,7 @@ obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_DSX) += synaptics_dsx/
 obj-$(CONFIG_TOUCHSCREEN_FTS)	+= focaltech_touch/
 obj-$(CONFIG_TOUCHSCREEN_NT36XXX)	+= nt36xxx/
 obj-$(CONFIG_TOUCHSCREEN_SYNAPTICS_TCM) += synaptics_tcm/
+obj-$(CONFIG_TOUCHSCREEN_FOCAL_FT8719_E7T)  += focal_ft8719_e7t/
 obj-$(CONFIG_TOUCHSCREEN_NVT_D2S) 	+= nvt_touch_d2s/
 obj-$(CONFIG_TOUCHSCREEN_NVT_A) 	+= nvt_touch_a/
 obj-$(CONFIG_TOUCHSCREEN_NVT_F7A) 	+= nvt_touch_f7a/
