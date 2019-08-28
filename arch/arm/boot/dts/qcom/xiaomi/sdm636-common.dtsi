@@ -10,7 +10,7 @@
  * GNU General Public License for more details.
  */
 
-/* sdm660.dtsi diff wayne - tulip/whyred */
+/* sdm660.dtsi tulip/whyred specific diff */
 &firmware {
 	android {
 		fstab {
@@ -31,12 +31,12 @@
 	};
 };
 
-
 &qcom_seecom {
 	/delete-property/ qcom,fde-key-size;
 };
 
-/* sdm660-common.dtsi diff wayne - tulip/whyred */
+
+/* sdm660-common.dtsi tulip/whyred specific diff */
 &usb3 {
 	extcon = <&pm660_charger>;
 	vbus_dwc3-supply = <&smb2_vbus>;
@@ -72,7 +72,8 @@
 	};
 };
 
-/* msm-pm660.dtsi diff common to whyred/tulip */
+
+/* msm-pm660.dtsi tulip/whyred specific diff */
 &pm660_charger {
 	qcom,micro-usb;
 };
