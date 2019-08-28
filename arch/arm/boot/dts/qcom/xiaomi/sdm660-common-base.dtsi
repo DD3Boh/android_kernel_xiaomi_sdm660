@@ -17,26 +17,6 @@
 #include "sdm660-common-pinctrl.dtsi"
 
 /* sdm660.dtsi common diff */
-&firmware {
-	android {
-		fstab {
-			vendor {
-				mnt_flags = "ro,barrier=1";
-				fsmgr_flags = "wait";
-			};
-
-			system {
-				compatible = "android,system";
-				dev = "/dev/block/platform/soc/c0c4000.sdhci/by-name/system";
-				type = "ext4";
-				mnt_flags = "ro,barrier=1";
-				fsmgr_flags = "wait";
-				status = "ok";
-			};
-		};
-	};
-};
-
 / {
 	pstore_reserve_mem: pstore_reserve_mem_region@0 {
 		linux,reserve-contiguous-region;
