@@ -11,11 +11,9 @@
  */
 
 /* common diff with msm-audio.dtsi */
-&soc {
-	qcom,msm-dai-mi2s {
-		qcom,msm-mi2s-rx-lines = <1>;
-		qcom,msm-mi2s-tx-lines = <2>;
-	};
+&dai_mi2s0 {
+	qcom,msm-mi2s-rx-lines = <1>;
+	qcom,msm-mi2s-tx-lines = <2>;
 };
 
 &hostless {
