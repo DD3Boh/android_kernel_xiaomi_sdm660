@@ -12,16 +12,15 @@
 
 /* sdm660-mtp.dtsi common diff */
 &mdss_dsi0 {
+	qcom,dsi-pref-prim-pan = <&dsi_td4320_boe_fhdplus_video>;
+};
+
+&mdss_dsi1 {
 	/delete-property/ pinctrl-names;
 	/delete-property/ pinctrl-0;
 	/delete-property/ pinctrl-1;
 	/delete-property/ qcom,platform-reset-gpio;
 	/delete-property/ qcom,platform-te-gpio;
-	qcom,dsi-pref-prim-pan = <&dsi_td4320_boe_fhdplus_video>;
-};
-
-&mdss_dsi1 {
-	/delete-property/ qcom,dsi-pref-prim-pan;
 };
 
 &pm660l_wled {
