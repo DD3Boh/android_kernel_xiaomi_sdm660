@@ -21,6 +21,7 @@
 	/delete-property/ pinctrl-1;
 	/delete-property/ qcom,platform-reset-gpio;
 	/delete-property/ qcom,platform-te-gpio;
+	/delete-property/ qcom,dsi-pref-prim-pan;
 };
 
 &pm660l_wled {
